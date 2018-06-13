@@ -1,0 +1,81 @@
+<style>
+    #xl {
+        /*display: none;*/
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: 9999;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    /* 模态框样式 */
+    
+    .xl_in {
+        width: 520px;
+        height: 340px;
+        margin: 300px auto;
+        background: #fff url(/Style/images/xltk/xl.png) top center no-repeat;
+        border: 1px solid #000;
+        padding-top: 50px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .xl_in p {
+        width: 380px;
+        margin: 0 auto;
+        font-size: 14px;
+        color: #666;
+        line-height: 32px;
+        text-align: left;
+        padding-top: 80px;
+    }
+    
+    .xl_in p span {
+        font-size: 16px;
+        color: #000;
+        line-height: 50px;
+    }
+    
+    .xltk_btn {
+        color: #fff;
+        display: block;
+        width: 220px;
+        height: 40px;
+        background: #f79035;
+        margin: 50px auto;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    
+    .xltk_cha {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url(/Style/images/xltk/cha.jpg) top center no-repeat;
+        
+    }
+</style>
+<div id="xl">
+    <div class="xl_in">
+        <p>为了保障您的资金安全，新浪支付增加支付密码功能。您需要设置支付密码，才能完成充值、提现、投资。
+            <br><span>如有疑问，联系客服：400-100-5869</span></p>
+        <a class="xltk_btn" href="__ROOT__/Sinacheckstand/set_pass">去新浪支付设置</a>
+        <a onclick="xltk()" class="xltk_cha"></a>
+
+        <!--<p>点击<a onclick="xltk()" href="">这里</a>关闭</p>-->
+    </div>
+</div>
+<script>
+    function xltk() {
+        var x1 = document.getElementById('xl');
+        x1.style.display = (x1.style.display == "block") ? "none" : "block";
+    }
+</script>

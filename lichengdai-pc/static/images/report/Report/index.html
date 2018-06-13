@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, maximum-scale=2.0">
+
+    <link type="text/css" href="/Style/css/reset.css" rel="stylesheet">
+    <link type="text/css" href="/Style/css/public/header_footer.css" rel="stylesheet">
+    <link type="text/css" href="/Style/css/report.css" rel="stylesheet">
+    <link type="text/css" href="/Style/css/jquery.fullPage.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/Style/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/Style/js/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="/Style/js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                resize: true,
+
+                anchors: ['page_1', 'page_2', 'page_3', 'page_4', 'page_5', 'page_6', 'page_7', 'page_8', 'page_9', 'page_10', 'page_11', 'page_12', 'page_13', 'page_14', 'page_15', 'page_16'],
+                scrollingSpeed: 700,
+                easing: 'easeInQuart',
+                menu: true,
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['首页', '目录', '立诚贷平台简介', '注册交易数据', '流量数据', '投资标的分布', '投资笔数', '投资用户特征 ——性别分布', '投资用户特征 ——年龄分布', '投资用户特征 ——学历分布', '投资用户特征 ——地域分布', '投资用户特征 ——地域分布', '理财风云榜', '立诚贷大事记', '立诚贷大事记 ——2015', '谢谢阅读'],
+                loopBottom: false,
+                autoScrolling: true,
+                scrollOverflow: false,
+                css3: true,
+                paddingTop: '0em',
+                paddingBottom: '0px',
+                keyboardScrolling: true,
+                sectionSelector: '.section',
+                slideSelector: '.slide',
+
+                //events
+                afterLoad: function (anchorLink, index) {
+                    if (index == 2) {
+                        $('.page_2').find('.dan').attr("id", "bounceInRight");
+                        $('.page_2').find('.shuang').attr("id", "bounceInLeft");
+                    }
+                    if (index == 3) {
+                        $('.page_3').find('.table').attr("id", "fadeIn");
+                    }
+                    if (index == 4) {
+                        $('.page_4').find('.ba').attr("id", "bounceInUp");
+                    }
+                    if (index == 5) {
+                        $('.page_5').find('.ba').attr("id", "bounceInUp");
+                    }
+                    if (index == 6) {
+                        $('.page_6').find('.zhuan').attr("id", "rotateIn");
+                    }
+                    if (index == 7) {
+                        $('.page_7').find('.ba').attr("id", "bounceInUp");
+                    }
+
+                    if (index == 9) {
+                        $('.page_9').find('.ba').attr("id", "bounceInUp");
+                    }
+
+                    if (index == 10) {
+                        $('.page_10').find('.ba').attr("id", "bounceInUp");
+                    }
+                    if (index == 11) {
+                        $('.page_11').find('.ba').attr("id", "fadeIn");
+                    }
+                    if (index == 12) {
+                        $('.page_12').find('.ba').attr("id", "fadeIn");
+                    }
+                    if (index == 13) {
+                        $('.page_13').find('.ba').attr("id", "bounceInLeft");
+                        $('.page_13').find('.hen6').attr("id", "bounceInRight");
+                    }
+                    if (index == 14) {
+                        $('.page_14').find('.find').attr("id", "fadeIn");
+                    }
+                    if (index == 15) {
+                        $('.page_15').find('.find').attr("id", "fadeIn");
+                    }
+
+                },
+                onLeave: function (index, direction) {
+                    if (index == 2) {
+                        $('.page_2').find('.dan').attr("id", "bounceInRight");
+                        $('.page_2').find('.shuang').attr("id", "bounceInLeft");
+                    }
+                    if (index == 3) {
+                        $('.page_3').find('.table').attr("id", "fadeIn");
+                    }
+                    if (index == 4) {
+                        $('.page_4').find('.ba').attr("id", "bounceInUp");
+                    }
+                    if (index == 5) {
+                        $('.page_5').find('.ba').attr("id", "bounceInUp");
+                    }
+                    if (index == 6) {
+                        $('.page_6').find('.zhuan').attr("id", "rotateIn");
+                    }
+                    if (index == 7) {
+                        $('.page_7').find('.ba').attr("id", "bounceInUp");
+                    }
+
+                    if (index == 9) {
+                        $('.page_9').find('.ba').attr("id", "bounceInUp");
+                    }
+
+                    if (index == 10) {
+                        $('.page_10').find('.ba').attr("id", "bounceInUp");
+                    }
+                    if (index == 11) {
+                        $('.page_11').find('.ba').attr("id", "fadeIn");
+                    }
+                    if (index == 12) {
+                        $('.page_12').find('.ba').attr("id", "fadeIn");
+                    }
+                    if (index == 13) {
+                        $('.page_13').find('.ba').attr("id", "bounceInLeft");
+                        $('.page_13').find('.hen6').attr("id", "bounceInRight");
+                    }
+                    if (index == 14) {
+                        $('.page_14').find('.find').attr("id", "fadeIn");
+                    }
+                    if (index == 15) {
+                        $('.page_15').find('.find').attr("id", "fadeIn");
+                    }
+
+                }
+            });
+        })
+    </script>
+</head>
+
+<body>
+
+
+    <div id="fullpage">
+        <div class="section page_1">
+
+
+            <div class="bg">
+
+
+
+
+                <div class="headerTop">
+                    <div class="topContent">
+                        <ul class="c_servive">
+                            <li>客服热线：<span class="c_telphone"> 400-151-3456</span>
+                            </li>
+                            <li>
+                                <!--立诚贷微博-->
+                                <span class="c_contact_icon c_microblog" onclick="javascript:window.open('http://weibo.com/u/5332032456')">
+                        <div id="weibo-popover-content" class="pophover-content popover bottom" style="top: 40px;left: -60px;">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                <p style="text-align: center;">
+                                    点击关注立诚贷微博 <a href="http://weibo.com/u/5332032456" rel="nofollow" target="_blank" hidefocus>@5332032456</a>
+                                </p>
+                            </div>
+                        </div>
+                    </span>
+                                <!--立诚贷APP-->
+                                <span class="c_contact_icon c_kik">
+                        <div id="wechat-popover-content" class="pophover-content popover bottom" style="top: 40px;left: -60px;">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                <p style="white-space: nowrap">扫码下载立诚贷APP</p>
+                                <div style="width: 100px; height: 100px; margin-left: 10px;">
+                                    <img src="/Style/images/header_footer/dibu_app.jpg" width="100" height="100" border="0" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+
+                                <!--官方群-->
+                                <span class="c_contact_icon c_gfq" onclick="javascript:window.open('http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODAwMTg0MF8yODc4ODVfNDAwMTUxMzQ1Nl8yXw&menu=yes')">
+                        <div id="weibo-popover-content" class="pophover-content popover bottom" style="top: 40px;left: -60px;">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                <p ><span>官方1群</span> <a>129071546</a> </p>
+                                <p> <span>官方2群</span> <a>391565848</a>
+                                </p>
+                                <p><span style="color: #f00;">官方VIP群 </span><a>129521501</a>
+                                </p>
+                    </div>
+                </div>
+
+                </span>
+                </li>
+                </ul>
+                <dl>
+                    <dd class="dlddhovers"><a href="/Aboutus/about_cjwt.html">常见问题</a>
+                    </dd>
+                    <dd>/</dd>
+                    <dd class="dlddhovers"><a class="" href="/Newh ">新手引导</a>
+                    </dd>
+                    <dd>/</dd>
+                    <dd class="dlddhovers"><a href="/Home/activity/activity_area.html" hidefocus>活动专区</a>
+                    </dd>
+                    <dd>/</dd>
+                    <dd class="dlddhovers"><a href="/integral.html" hidefocus>积分商城</a>
+                    </dd>
+                    <dd>/</dd>
+                    <dd class="dlddhovers"><a style="color:#12adff;" href="/member/common/login.html" rel="nofollow" hidefocus>登录</a>
+                    </dd>
+                    <dd class="dlddhovers dlddhovers2"><a href="/member/common/reg" rel="nofollow" hidefocus>注册送红包</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+
+
+
+        <div class="logoo"><img src="/Style/images/report/logo.png" alt="">
+        </div>
+        <a class="jian rubberBand">
+            <img src="/Style/images/report/jian.png" alt="">
+        </a>
+
+
+
+
+
+    </div>
+
+
+
+    </div>
+
+
+    <div class="section page_2" id="page2">
+        <div class="bg_2">
+
+            <div class="tu">
+                <img class="dan" src="/Style/images/report/a1.png">
+                <img class="shuang" src="/Style/images/report/a2.png">
+                <img class="dan" src="/Style/images/report/a3.png">
+                <img class="shuang" src="/Style/images/report/a4.png">
+                <img class="dan" src="/Style/images/report/a5.png">
+                <img class="shuang" src="/Style/images/report/a6.png">
+                <img class="dan" src="/Style/images/report/a7.png">
+
+            </div>
+            <!-- style="animation-delay:1s;-webkit-animation-delay:1s;"-->
+            <div class="wen">
+                <p class="dan">一、立诚贷平台简介</p>
+                <p class="shuang">二、注册交易数据</p>
+                <p class="dan">三、流量数据</p>
+                <p class="shuang">四、借款标的分布</p>
+                <p class="dan">五、投资用户特征</p>
+                <p class="shuang">六、理财风云榜</p>
+                <p class="dan">七、大事记</p>
+            </div>
+
+            <!--<div class="west_vs_east">
+                <img src="/Style/images/report/jian.png" alt="">
+            </div>-->
+        </div>
+    </div>
+
+
+
+
+    <div class="section page_3">
+        <div class="bg_0 bg_3">
+            <div class="yemei">
+                <dl class="yemei_dl">
+                    <dt>01</dt>
+                    <dd>
+                        <p>Part One</p>
+                        <span>立诚贷平台简介</span>
+                    </dd>
+                </dl>
+
+
+            </div>
+            <div class="yejiao">02</div>
+
+
+            <table class="table">
+                <tr>
+                    <td>平台名称</td>
+                    <td>信广立诚贷</td>
+                </tr>
+                <tr>
+                    <td>成立时间</td>
+                    <td>2014年8月4日</td>
+                </tr>
+                <tr>
+                    <td>公司名称</td>
+                    <td>信广立诚贷（北京）科技有限公司</td>
+                </tr>
+                <tr>
+                    <td>注册资本</td>
+                    <td>5000.00万</td>
+                </tr>
+                <tr>
+                    <td>公司法人</td>
+                    <td>林学思</td>
+                </tr>
+                <tr>
+                    <td>总经理</td>
+                    <td>黄仲军</td>
+                </tr>
+                <tr>
+                    <td>总部地址</td>
+                    <td>北京市朝阳区四惠东四惠大厦四层4004W-4006W</td>
+                </tr>
+                <tr>
+                    <td>公司电话</td>
+                    <td>400-151-3456</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <div class="section page_4">
+        <div class="bg_0 bg_4">
+            <div class="yemei">
+                <dl class="yemei_dl">
+                    <dt>02</dt>
+                    <dd>
+                        <p>Part tow</p>
+                        <span>注册交易数据</span>
+                    </dd>
+                </dl>
+
+
+            </div>
+            <div class="yejiao">03</div>
+            <div class="main" id="main">
+
+                <div class="main_d">
+
+                    <img class="ba" src="/Style/images/report/ba.png">
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="section page_5">
+        <div class="bg_0 bg_5">
+            <div class="yemei">
+                <dl class="yemei_dl">
+                    <dt>03</dt>
+                    <dd>
+                        <p>Part three</p>
+                        <span>流量数据</span>
+                    </dd>
+                </dl>
+
+
+            </div>
+            <div class="yejiao">04</div>
+            <div class="main2" id="main">
+
+                <div class="main2_d">
+
+                    <img class="ba" src="/Style/images/report/c2.png">
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="section page_6">
+        <div class="bg_0 bg_6">
+            <div class="yemei">
+                <dl class="yemei_dl">
+                    <dt>04</dt>
+                    <dd>
+                        <p>Part four</p>
+                        <span>投资标的分布</span>
+                    </dd>
+                </dl>
+
+
+            </div>
+            <div class="yejiao">05</div>
+
+            <div class="shi"><img src="/Style/images/report/shi.png">
+            </div>
+
+            <div class="yuan">
+                <img class="zhuan" src="/Style/images/report/f1.png"> <img class="zhuan" src="/Style/images/report/f2.png">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section page_7">
+        <div class="bg_0 bg_7">
+            <div class="yemei" style="float: left;">
+                <dl class="yemei_dl">
+                    <dt>05</dt>
+                    <dd>
+                        <p>Part five</p>
+                        <span>投资笔数</span>
+                    </dd>
+                </dl>
+
+
+            </div>
+            <div class="meiye" style="text-align: right;">
+                <p>投资用户特征 ——投资笔数</p>
+                <p>投资笔数在逐月递增</p>
+            </div>
+            <div class="yejiao">06</div>
+            <div class="main3" id="main">
+
+                <div class="main3_d">
+
+                    <img class="ba" src="/Style/images/report/d2.png">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="section page_8">
+        <div class="bg_0 bg_8">
+            <div class="meiye">
+                <p>投资用户特征 ——性别分布</p>
+                <p>男性比女性更乐于理财</p>
+                <p>从性别来看，男性投资用户比女性用户投资高<span>46.06个点</span>
+                </p>
+            </div>
+            <div class="yejiao">07</div>
+
+            <div class="xingbie">
+
+                <dl class="nan">
+                    <dt><img class="ba" src="/Style/images/report/nan.png"></dt>
+                    <dd>
+                        <p>
+                            男性投资占比：</p>
+                        <span>73.03% </span>
+                    </dd>
+                </dl>
+                <dl class="nv">
+                    <dt><img class="ba" src="/Style/images/report/nv.png"></dt>
+                    <dd>
+                        <p>
+                            女性投资占比：</p>
+                        <span>26.97% </span>
+                    </dd>
+                </dl>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="section page_9">
+        <div class="bg_0 bg_9">
+            <div class="meiye">
+                <p>投资用户特征 ——年龄分布</p>
+                <p>年龄30-39岁的中年人更乐于理财财</p>
+                <p>从年龄来看，30-39岁中年人更乐于理财，20-29岁年轻人次之。
+                </p>
+            </div>
+            <div class="yejiao">08</div>
+
+            <div class="main4" id="main">
+
+                <div class="main4_d">
+
+                    <img class="ba" src="/Style/images/report/e2.png">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section page_10">
+        <div class="bg_0 bg_10">
+            <div class="meiye">
+                <p>投资用户特征 ——学历分布</p>
+                <p>投资用户中大专学历占比较大</p>
+                <p>从学历来看，投资用户中大专学历占比较大，高中与本科及以上学历学历次之，小学学历占比最小
+                </p>
+            </div>
+            <div class="yejiao">09</div>
+
+            <div class="main5" id="main">
+
+                <div class="main5_d">
+
+                    <img class="ba" src="/Style/images/report/g2.png">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section page_11">
+        <div class="bg_0 bg_11">
+            <div class="meiye">
+                <p>投资用户特征 ——地域分布</p>
+                <p>8月投资用户区域分布图</p>
+
+            </div>
+            <div class="yejiao">10</div>
+
+            <img class="ba" src="/Style/images/report/di1.png">
+
+        </div>
+    </div>
+
+
+    <div class="section page_12">
+        <div class="bg_0 bg_12">
+            <div class="meiye">
+                <p>投资用户特征 ——地域分布</p>
+                <p>9月投资用户区域分布图</p>
+
+            </div>
+            <div class="yejiao">11</div>
+            <img class="ba" src="/Style/images/report/di2.png">
+        </div>
+    </div>
+
+
+    <div class="section page_13">
+        <div class="bg_0 bg_13">
+            <div class="yemei">
+                <dl class="yemei_dl">
+                    <dt>06</dt>
+                    <dd>
+                        <p>Part six</p>
+                        <span>理财风云榜</span>
+                    </dd>
+                </dl>
+
+
+            </div>
+            <div class="yejiao">12</div>
+
+
+            <div class="main6">
+                <img class="ba" src="/Style/images/report/y1.png">
+
+
+                <img class="hen6" src="/Style/images/report/y2.png">
+
+
+                <img class="ba" src="/Style/images/report/y3.png">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="section page_14">
+        <div class="bg_0 bg_14">
+            <div class="yemei" style="float:left">
+                <dl class="yemei_dl">
+                    <dt>07</dt>
+                    <dd>
+                        <p>Part seven</p>
+                        <span>立诚贷大事记</span>
+                    </dd>
+                </dl>
+
+
+            </div>
+            <div class="meiye" style="text-align: right;">
+                <p>立诚贷大事记 ——2014</p>
+
+            </div>
+            <div class="yejiao">13</div>
+            <div class="dashi">
+
+                <img class="find" src="/Style/images/report/z1.png">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section page_15">
+        <div class="bg_0 bg_15">
+            <div class="meiye">
+                <p>立诚贷大事记 ——2015</p>
+
+            </div>
+            <div class="yejiao">14</div>
+
+            <div class="dashi">
+
+                <img class="find" src="/Style/images/report/z2.png">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section page_16">
+        <div class=" bg_16">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!--<script src="/Style/js/echarts-2.2.7/build/dist/echarts-all.js"></script>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts图表
+    var myChart = echarts.init(document.getElementById('main'));
+
+    var option = {
+
+        title: {
+            text: '某地区蒸发量和降水量',
+            subtext: '纯属虚构'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['蒸发量', '降水量']
+        },
+        toolbox: {
+            show: true,
+            feature: {
+                mark: {
+                    show: true
+                },
+                dataView: {
+                    show: true,
+                    readOnly: false
+                },
+                magicType: {
+                    show: true,
+                    type: ['line', 'bar']
+                },
+                restore: {
+                    show: true
+                },
+                saveAsImage: {
+                    show: true
+                }
+            }
+        },
+        calculable: true,
+        xAxis: [
+            {
+
+                type: 'category',
+                data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+        }
+    ],
+        yAxis: [
+            {
+                type: 'value',
+
+        }
+    ],
+        series: [
+            {
+
+                name: '蒸发量',
+                type: 'bar',
+                data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+                markPoint: {
+                    data: [
+                        {
+                            type: 'max',
+                            name: '最大值'
+                        },
+                        {
+                            type: 'min',
+                            name: '最小值'
+                        }
+                ]
+                },
+                markLine: {
+                    data: [
+                        {
+                            type: 'average',
+                            name: '平均值'
+                        }
+                ]
+                }
+        },
+            {
+                name: '降水量',
+                type: 'bar',
+                data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+                markPoint: {
+                    data: [
+                        {
+                            name: '年最高',
+                            value: 182.2,
+                            xAxis: 7,
+                            yAxis: 183,
+                            symbolSize: 18
+                        },
+                        {
+                            name: '年最低',
+                            value: 2.3,
+                            xAxis: 11,
+                            yAxis: 3
+                        }
+                ]
+                },
+                markLine: {
+                    data: [
+                        {
+                            type: 'average',
+                            name: '平均值'
+                        }
+                ]
+                }
+        }
+    ]
+    };
+
+    // 为echarts对象加载数据 
+    myChart.setOption(option);
+</script>-->
+
+<!--<include file="Public:_right" />-->
